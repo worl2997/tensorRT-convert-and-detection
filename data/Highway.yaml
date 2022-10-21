@@ -1,0 +1,4 @@
+train: /home/jacky/바탕화면/yolov7/custom_data/Highway/train.txt
+val: /home/jacky/바탕화면/yolov7/custom_data/Highway/valid.txt
+nc: 3
+names: ['Person', 'Car', 'Traffic light']
