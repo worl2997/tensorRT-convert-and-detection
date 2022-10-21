@@ -42,8 +42,8 @@ python3 trt_video_detection.py --model yolov7-tiny-nms.trt --data_file data/coco
 
 yolov7
 
-![Untitled](img/yolov7.png)
+![Untitled](yolov7.png)
 
 yolov7-tiny
 
-![Untitled](img/yolo-tiny.png)
+![Untitled](yolo-tiny.png)
