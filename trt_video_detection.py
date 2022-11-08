@@ -39,7 +39,7 @@ def visualize(img,boxes, scores, classes,names, colors, ratio,dwdh,fps):
         name = names[cl]
         color = colors[name]
         name += ' ' + str(round(float(score), 3))
-        img = cv2.rectangle(img, (box[0],box[1]), (box[2],box[3]), color, 2)
+        img = cv2.rectangle(img, (int(box[0]),int(box[1])), (int(box[2]),int(box[3])), color, 2)
         img =cv2.putText(img, name, (int(box[0]), int(box[1]) - 2), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, thickness=1)
         img = cv2.putText(img, 'FPS: '+str(round(fps,1)), (0, 25), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255,255),thickness=2)
     return img
